@@ -3,8 +3,8 @@ package paciente;
 public class Principal {
 
     public static void main(String[] args) {
-        System.out.printf("%-10s%-10s%-10s%-10s%-10s%-20s%-35s%10s  %10s %-10s%-10s\n","DNI","NOMBRE", "PATERNO", "MATERNO", "TELEFONO", "CORREO", "DIRECCION",  "EDAD", "ESTATURA", "ISCASADO", "SEXO");
-        System.out.printf("%-10s%-10s%-10s%-10s%-10s%-20s%-35s%10s  %10s %-10s%-10s\n","---","------", "-------", "-------", "--------", "------", "---------",  "----", "--------", "--------", "----");
+        System.out.printf("%-10s%-10s%-10s%-10s%-10s%-20s%-35s%10s  %10s %-10s%-10s\n", "DNI", "NOMBRE", "PATERNO", "MATERNO", "TELEFONO", "CORREO", "DIRECCION", "EDAD", "ESTATURA", "ISCASADO", "SEXO");
+        System.out.printf("%-10s%-10s%-10s%-10s%-10s%-20s%-35s%10s  %10s %-10s%-10s\n", "---", "------", "-------", "-------", "--------", "------", "---------", "----", "--------", "--------", "----");
 //CREAR UN OBJETO DE TIPO PACIENTE
         Paciente luis = new Paciente();
         luis.setDni("11111111");
@@ -18,9 +18,8 @@ public class Principal {
         luis.setSexo('H');
         luis.setIsCasado(true);
         luis.setNombre("Luis");
-        
-        //luis.mostrar();
 
+        //luis.mostrar();
         Paciente carla = new Paciente("22222222",
                 "Carla",
                 "Lescano",
@@ -33,14 +32,19 @@ public class Principal {
                 false,
                 'M');
         //carla.mostrar();
-        
-        Paciente maria = new Paciente("33333333","María","Vazquez","Ledesma");
+
+        Paciente maria = new Paciente("33333333", "María", "Vazquez", "Ledesma");
         maria.setEdad(17);
+        maria.setEstatura(1.76);
         //maria.mostrar();
-        
+
         luis.mostrarMayoresEdad();
         carla.mostrarMayoresEdad();
         maria.mostrarMayoresEdad();
-        
+
+        luis.mostrarEstaturaMayor173();
+        carla.mostrarEstaturaMayor173();
+        maria.mostrarEstaturaMayor173();
+
     }
 }
