@@ -25,10 +25,10 @@ public class Principal {
         //Quisiera saber los autores que tengan libros sobre ciencia
            // Entrada: "ciencia"
            // Salida
-        System.out.println("Id Autor: " + Libro.retornaCodigoAutorCiencia(x, "Ciencia"));   
+        System.out.println("Id Autor: " + MisMetodos.retornaCodigoAutorCiencia(x, "Ciencia"));   
          
         for(int i=0; i<y.length; i++ ) {
-            if(y[i].getIdAutor()== Libro.retornaCodigoAutorCiencia(x, "Ciencia")) {
+            if(y[i].getIdAutor()== MisMetodos.retornaCodigoAutorCiencia(x, "Ciencia")) {
                 System.out.println("Nombre: " + y[i].getNombre());
                 System.out.println("Apellido: " + y[i].getPaterno());
             }
