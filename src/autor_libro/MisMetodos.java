@@ -6,8 +6,8 @@ public class MisMetodos {
         int idAutorAux = 0;
         Libro libro = null;
         for (int i = 0; i < x.length; i++) {
-            libro = x[i];
-            String nombre = libro.getNombre();
+            libro = x[i]; //Objeto
+            String titulo = libro.getTitulo();
             String descri = libro.getDescripcion();
             int idAutor = libro.getIdAutor();
             if (descri.equalsIgnoreCase(cadena)) {
@@ -17,5 +17,16 @@ public class MisMetodos {
             }
         }
         return idAutorAux;
+    }
+
+    public static void mostrarTitulosLibrosProgramacion(Libro[] x, String cadena) {
+        for (int i = 0; i < x.length; i++) {
+            String titulo = x[i].getTitulo();
+            String descri = x[i].getDescripcion();
+            int idAutor = x[i].getIdAutor();
+            if (descri.equalsIgnoreCase(cadena)) {
+                System.out.println(titulo);
+            }
+        }
     }
 }

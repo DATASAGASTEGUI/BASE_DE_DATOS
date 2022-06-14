@@ -15,9 +15,22 @@ public class Principal {
         Libro l4 = new Libro(4,"Programación Java","Programación",500,2);
         Libro l5 = new Libro(5,"Física","Ciencia",250,2);
         
+        //BASE DE DATOS DE OBJETOS
         Libro[] x = {l1,l2,l3,l4,l5};
         Autor[] y = {a1,a2};
         
+        System.out.println("Quisiera mostrar todos los titulos de libros sobre programación");
+        MisMetodos.mostrarTitulosLibrosProgramacion(x, "Programación");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*
         
         //String nombre = JOptionPane.showInputDialog("Ingrese su nombre");
         //JOptionPane.showMessageDialog(null, "Hola " + nombre);
@@ -34,10 +47,10 @@ public class Principal {
             }
         }
         
-        //Quisiera mostrar todos los titulos de libre sobre programación
+        
         //Quisiera saber el autor con mayor número de libros
                 
-           
+           */
     }
     
 }

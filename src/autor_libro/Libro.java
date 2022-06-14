@@ -3,7 +3,7 @@ package autor_libro;
 public class Libro {
 
     private int idLibro;
-    private String nombre;
+    private String titulo;
     private String descripcion;
     private int nroPaginas;
     private int idAutor;
@@ -11,9 +11,9 @@ public class Libro {
     public Libro() {
     }
 
-    public Libro(int idLibro, String nombre, String descripcion, int nroPaginas, int idAutor) {
+    public Libro(int idLibro, String titulo, String descripcion, int nroPaginas, int idAutor) {
         this.idLibro = idLibro;
-        this.nombre = nombre;
+        this.titulo = titulo;
         this.descripcion = descripcion;
         this.nroPaginas = nroPaginas;
         this.idAutor = idAutor;
@@ -27,12 +27,12 @@ public class Libro {
         this.idLibro = idLibro;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getDescripcion() {
@@ -61,7 +61,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{" + "idLibro=" + idLibro + ", nombre=" + nombre + ", descripcion=" + descripcion + ", nroPaginas=" + nroPaginas + ", idAutor=" + idAutor + '}';
+        return "Libro{" + "idLibro=" + idLibro + ", titulo=" + titulo + ", descripcion=" + descripcion + ", nroPaginas=" + nroPaginas + ", idAutor=" + idAutor + '}';
     }
 
 
